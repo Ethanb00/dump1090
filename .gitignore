@@ -13,6 +13,6 @@ faup1090
 package-wheezy
 oneoff/convert_benchmark
 oneoff/decode_comm_b
-public_html/config.py
+public_html/conf.py
 .DS_Store
-public_html/config.pyc
+public_html/conf.pyc
