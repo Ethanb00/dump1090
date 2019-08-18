@@ -1244,6 +1244,7 @@ function refreshTableInfo() {
         if (tableplane.squawk in SpecialSquawks) {
             classes = classes + " " + SpecialSquawks[tableplane.squawk].cssClass;
             show_squawk_warning = true;
+            notifySMS();
 		}			                
 
         // ICAO doesn't change
@@ -1903,4 +1904,13 @@ function updatePiAwareOrFlightFeeder() {
 		PageName = 'PiAware Skyview';
 	}
 	refreshPageTitle();
+}
+
+function notifySMS() {
+        $.ajax({
+                type: "POST",
+                url: "notifySMS.py",
+                data: { param: text}
+                }).done(function( ) {
+                });
 }
