@@ -14,3 +14,5 @@ package-wheezy
 oneoff/convert_benchmark
 oneoff/decode_comm_b
 public_html/config.py
+.DS_Store
+public_html/config.pyc
